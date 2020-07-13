@@ -1,0 +1,29 @@
+{
+  "name": "rain-vite",
+  "version": "1.0.0",
+  "description": "自定义实现vite",
+  "main": "index.js",
+  "bin": {
+    "rain-vite": "./bin/www.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raind33/rain-vite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raind33/rain-vite/issues"
+  },
+  "homepage": "https://github.com/raind33/rain-vite#readme",
+  "dependencies": {
+    "es-module-lexer": "^0.3.24",
+    "koa": "^2.13.0",
+    "koa-static": "^5.0.0",
+    "magic-string": "^0.25.7"
+  }
+}
