@@ -1,5 +1,6 @@
 const Koa = require('koa')
 const { moduleRewritePlugin } = require('./plugins/serverPluginModuleRewrite')
+const { moduleResolvePlugin } = require('./plugins/serverPluginModuleResolve')
 const { serveStaticPlugin } = require('./plugins/serverPluginServeStatic')
 function createServer () {
   const app = new Koa()
@@ -13,6 +14,8 @@ function createServer () {
   const resolvedPlugins = [
     // 解析import 重写路径
     moduleRewritePlugin,
+    // 解析以/@modules开头的内容，找到对应的结果
+    moduleResolvePlugin,
     // 实现静态服务
     serveStaticPlugin
   ]

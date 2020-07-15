@@ -32,7 +32,7 @@ function moduleRewritePlugin ({app, root}) {
       // 重写文件中内容，再返回
       const result = rewriteImports(res)
       ctx.body = result
-      console.log(res)
+      console.log(res) 
     }
 
   })
