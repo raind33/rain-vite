@@ -31,7 +31,6 @@ function moduleResolvePlugin ({ app, root }) {
       return next()
     }
     const id = ctx.path.replace(reg, '')
-    console.log(id, 323)
     ctx.type = 'js' // 设置响应类型
     const content = await fs.readFile(vueResolved[id], 'utf8')
     ctx.body = content
